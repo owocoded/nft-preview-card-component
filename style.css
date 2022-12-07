@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    place-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.equilibrium {
+    height: 55%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.equilibrium::after {
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: -4;
+}
+
+.equilibrium:hover::after {
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.equilibrium img {
+    width: 100%;
+    height: 100%;
+}
+
+.price_tag {
+    height: 24%;
+    color: hsl(217, 51%, 70%);
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 5%;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.price_tag h4 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.price_tag h4:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.price_tag p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.price-tag-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.price-tag-footer div {
+    position: relative;
+    padding-left: 18px;
+}
+
+.price-tag-footer div:nth-child(1) {
+    color: hsl(178, 100%, 50%);
+}
+
+.price-tag-footer div:nth-child(2) {
+    padding-left: 22px;
+}
+
+.price-tag-footer div::before {
+    content: url(images/icon-ethereum.svg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    line-height: 0;
+}
+
+.price-tag-footer div:nth-child(2)::before {
+    content: url(images/icon-clock.svg);
+}
+
+.footer {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.footer p {
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+    font-family: 300;
+}
+
+.footer span {
+    margin-left: 5px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.footer span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(178, 100%, 50%);
+}
